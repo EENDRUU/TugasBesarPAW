@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="container" style="margin-top: 40px">
-            <div class="box">
+            <div class="box" style="margin-bottom: 40px;">
                 <article class="media">
                     <figure class="media-left">
                         <p class="image is-64x64">
@@ -37,7 +37,7 @@
                         <p>
                             <strong>
                                 <!-- {{data.namaLowongan}} -->
-                                  Staff IT PT Cahaya Cipta Selaras
+                                dsdsdasasas
                             </strong>
                             <br>
                             <!-- {{data.deskripsiLowongan}} -->
@@ -64,29 +64,29 @@
 export default {
     data(){
         return{
-            datas:[]
+            // datas:[]
         }
     },
     created(){
-        this.getData();
+        // this.getData();
     },
 
     methods:{
-        getData(){
-             let uri="/api/Lowongan";
-             axios.get(uri).then((response) => {
-                 console.log(response);
-                 this.datas = response.data;
-            }).catch(error => {
-                this.$toast.open({
-                    duration: 2000,
-                    message: error,
-                    position: 'is-bottom',
-                    type: 'is-danger',
-                    queue: false,
-                })
-            });
-        }
+        // getData(){
+        //      let uri="/api/Lowongan";
+        //      axios.get(uri).then((response) => {
+        //          console.log(response);
+        //          this.datas = response.data;
+        //     }).catch(error => {
+        //         this.$toast.open({
+        //             duration: 2000,
+        //             message: error,
+        //             position: 'is-bottom',
+        //             type: 'is-danger',
+        //             queue: false,
+        //         })
+        //     });
+        // }
     }
 }
 </script>
