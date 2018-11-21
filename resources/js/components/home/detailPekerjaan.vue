@@ -105,7 +105,7 @@
                                           <p class="subtitle"></p>
                                           <div class="content">
                                             <p class="image is-64x64">
-                                              <img src="img/job3.png">
+                                              <img src="../../../img/job3.png">
                                             </p>
                                             <p class="subtitle">
                                               Deskripsi Perusahaan

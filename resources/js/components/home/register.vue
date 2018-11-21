@@ -81,7 +81,7 @@ export default {
 
 <style>
             .header-image {
-                    background-image: url("img/backgroud_index.jpg");
+                    background-image: url("../../../img/backgroud_index.jpg");
                     background-position: center center;
                     background-repeat: no-repeat;
                     background-attachment: fixed;
@@ -89,7 +89,7 @@ export default {
                     background-color: #999;
             }
             .image1{
-                background-image: url("img/2.jpg");
+                background-image: url("../../../img/2.jpg");
                 height: 400px;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -99,7 +99,7 @@ export default {
             }
 
             .image2{
-                background-image: url("img/3.jpg");
+                background-image: url("../../../img/3.jpg");
                 height: 400px;
                 background-position: center;
                 background-repeat: no-repeat;

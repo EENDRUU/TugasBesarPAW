@@ -168,7 +168,7 @@ export default {
                     height: 250px;
                 }
                 .hero-image{
-                    background-image: url("img/tileatasPelamar.jpg");
+                    background-image: url("../../../img/tileatasPelamar.jpg");
                     background-position: center center;
                     background-repeat: no-repeat;
                     background-attachment: fixed;

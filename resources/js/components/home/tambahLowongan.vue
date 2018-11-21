@@ -4,7 +4,7 @@
                     	<div class="card">
 						  <div class="card-image">
 							<figure class="image is-3by1">
-							  <img src="img/EmployeeBenefits.jpg">
+							  <img src="../../../img/EmployeeBenefits.jpg">
 							</figure>
 						  </div>
 							<div class="card-content">

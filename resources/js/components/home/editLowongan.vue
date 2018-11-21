@@ -6,7 +6,7 @@
 						<div class="card">
 						  <div class="card-image">
 							<figure class="image is-3by1">
-							  <img src="img/Banner-Search.jpg">
+							  <img src="../../../img/Banner-Search.jpg">
 							</figure>
 						  </div>
 							<div class="card-content">
@@ -104,7 +104,7 @@ export default {
                     background-size: cover;
                     background-color: #999;
             }
-            			
+
 			.title1{
 					font-size: 35pt;
 					color: grey;
