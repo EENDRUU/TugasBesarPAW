@@ -1,6 +1,6 @@
 <template>
-<div class="has-background-light">
-    <div class="is-widescreen">
+<div class="has-background-light is-fullheight" style="">
+    <div>
          <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
@@ -32,6 +32,9 @@
                 <a class="navbar-item">
                     About Us
                 </a>
+                <router-link :to="{name: 'LoginPelamar'}"  class="navbar-item" :class="{'is-black': burger}">
+                    Login Pelamar
+                </router-link>
 
                 </div>
 
