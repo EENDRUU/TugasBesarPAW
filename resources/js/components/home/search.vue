@@ -90,10 +90,6 @@ export default {
     }
 }
 </script>
-<<<<<<< HEAD
-
-=======
 <style>
 
 </style>
->>>>>>> 518dc3497c412fa278a9a428b7dad36fa54b9064
