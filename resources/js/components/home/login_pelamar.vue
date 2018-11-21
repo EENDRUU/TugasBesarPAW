@@ -7,6 +7,7 @@
 							  <img src="img/image.jpg">
 							</figure>
 						  </div>
+
 							
 							<div class="card-content">
 								<div class="column is-6 is-offset-3">
