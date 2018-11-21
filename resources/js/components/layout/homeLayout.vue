@@ -1,5 +1,5 @@
 <template>
-<div class="has-background-light">
+<div class="has-background-light" style="height:100%;">
     <div>
          <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
@@ -56,6 +56,15 @@
             </transition>
             </main>
         </div>
+        <footer class="footer">
+            <div class="content has-text-centered">
+
+                    <h6>
+                        <strong>InfoKerja </strong> @2018 find us on <a href="https://facebook.com">Facebook</a> or
+                        <a href="http://twitter.com">Twitter</a></h6>
+
+            </div>
+        </footer>
     </div>
 
 </div>
@@ -70,7 +79,8 @@
     }
 </script>
 
-
 <style>
-
+    .footer{
+        background-color: black;
+    }
 </style>
