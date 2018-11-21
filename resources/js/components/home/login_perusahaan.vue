@@ -5,6 +5,7 @@
 						  <div class="card-image">
 							<figure class="image is-3by1">
 							  <img src="img/findjobsBanner.jpg">
+								
 							</figure>
 						  </div>
 							<div class="card-content">

@@ -1,6 +1,9 @@
 <template>
     <div class="container">
-        <div class="container" style="margin-top: 50px;">
+        <div style="margin-top: 50px;">
+            <h1 style="font-size:40px;">Search Result</h1>
+        </div>
+        <div class="container" style="margin-top: 20px;">
             <div class="box">
                 <div class="field is-grouped">
                     <p class="control is-expanded">
@@ -24,8 +27,8 @@
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 40px">
-            <div class="box">
+        <div class="container" style="margin-top: 60px">
+            <div class="box" style="margin-bottom: 40px;">
                 <article class="media">
                     <figure class="media-left">
                         <p class="image is-64x64">
@@ -64,29 +67,29 @@
 export default {
     data(){
         return{
-            datas:[]
+            // datas:[]
         }
     },
     created(){
-        this.getData();
+        // this.getData();
     },
 
     methods:{
-        getData(){
-             let uri="/api/Lowongan";
-             axios.get(uri).then((response) => {
-                 console.log(response);
-                 this.datas = response.data;
-            }).catch(error => {
-                this.$toast.open({
-                    duration: 2000,
-                    message: error,
-                    position: 'is-bottom',
-                    type: 'is-danger',
-                    queue: false,
-                })
-            });
-        }
+        // getData(){
+        //      let uri="/api/Lowongan";
+        //      axios.get(uri).then((response) => {
+        //          console.log(response);
+        //          this.datas = response.data;
+        //     }).catch(error => {
+        //         this.$toast.open({
+        //             duration: 2000,
+        //             message: error,
+        //             position: 'is-bottom',
+        //             type: 'is-danger',
+        //             queue: false,
+        //         })
+        //     });
+        // }
     }
 }
 </script>
