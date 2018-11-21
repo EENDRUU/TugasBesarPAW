@@ -58479,6 +58479,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 var HomeLayout = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('HomeLayout', __webpack_require__(44));
 var Search = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('Search', __webpack_require__(50));
+var LoginPelamar = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('LoginPelamar', __webpack_require__(62));
 
 var routes = [{
     path: '/',
@@ -58487,6 +58488,10 @@ var routes = [{
         name: 'Search',
         path: '/',
         component: Search
+    }, {
+        name: 'LoginPelamar',
+        path: '/loginpelamar',
+        component: LoginPelamar
     }]
 }];
 
@@ -58699,6 +58704,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -58734,8 +58742,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "has-background-light" }, [
-    _c("div", { staticClass: "is-widescreen" }, [
+  return _c("div", { staticClass: "has-background-light is-fullheight" }, [
+    _c("div", [
       _c(
         "nav",
         {
@@ -58781,7 +58789,21 @@ var render = function() {
                   _vm._v(" "),
                   _c("a", { staticClass: "navbar-item" }, [
                     _vm._v("\n                    About Us\n                ")
-                  ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "navbar-item",
+                      class: { "is-black": _vm.burger },
+                      attrs: { to: { name: "LoginPelamar" } }
+                    },
+                    [
+                      _vm._v(
+                        "\n                    Login Pelamar\n                "
+                      )
+                    ]
+                  )
                 ],
                 1
               ),
@@ -58983,7 +59005,7 @@ exports = module.exports = __webpack_require__(12)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -58994,6 +59016,9 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -59103,9 +59128,15 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
+      _c("div", { staticStyle: { "margin-top": "50px" } }, [
+        _c("h1", { staticStyle: { "font-size": "40px" } }, [
+          _vm._v("Search Result")
+        ])
+      ]),
+      _vm._v(" "),
       _c(
         "div",
-        { staticClass: "container", staticStyle: { "margin-top": "50px" } },
+        { staticClass: "container", staticStyle: { "margin-top": "20px" } },
         [
           _c("div", { staticClass: "box" }, [
             _c("div", { staticClass: "field is-grouped" }, [
@@ -59144,7 +59175,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "container", staticStyle: { "margin-top": "40px" } },
+        { staticClass: "container", staticStyle: { "margin-top": "60px" } },
         [
           _c(
             "div",
@@ -59282,6 +59313,264 @@ if (false) {
 /***/ (function(module, exports) {
 
 module.exports = "/images/logo.png?340a03de4792a49edfc1ffad4029d4f2";
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(63)
+}
+var normalizeComponent = __webpack_require__(4)
+/* script */
+var __vue_script__ = __webpack_require__(65)
+/* template */
+var __vue_template__ = __webpack_require__(66)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/home/login_pelamar.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-200e750e", Component.options)
+  } else {
+    hotAPI.reload("data-v-200e750e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(64);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(13)("1b2c7c42", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-200e750e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login_pelamar.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-200e750e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login_pelamar.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(12)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.header-image {\n                    background-image: url(\"\");\n                    background-position: center center;\n                    background-repeat: no-repeat;\n                    background-attachment: fixed;\n                    background-size: cover;\n                    background-color: #999;\n}\n.title1{\n\t\t\t\t\tfont-size: 35pt;\n\t\t\t\t\tcolor: grey;\n}\n.card{\n\n\t\t\t  background: rgb(255,255,255); /* Fallback color */\n\t\t\t  background: rgba(255,255,255, 0.5); /* background with 0.5 opacity */\n}\n ", ""]);
+
+// exports
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            datas: []
+        };
+    },
+    created: function created() {
+        this.getData();
+    },
+
+
+    methods: {
+        getData: function getData() {
+            var _this = this;
+
+            var uri = "/api/Lowongan";
+            axios.get(uri).then(function (response) {
+                console.log(response);
+                _this.datas = response.data;
+            }).catch(function (error) {
+                _this.$toast.open({
+                    duration: 2000,
+                    message: error,
+                    position: 'is-bottom',
+                    type: 'is-danger',
+                    queue: false
+                });
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "hero-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-image" }, [
+            _c("figure", { staticClass: "image is-3by1" }, [
+              _c("img", { attrs: { src: __webpack_require__(67) } })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-content" }, [
+            _c("div", { staticClass: "column is-6 is-offset-3" }, [
+              _c("h1", { staticClass: "title1" }, [
+                _vm._v(
+                  "\n                     Login Pelamar\n                 "
+                )
+              ]),
+              _c("br"),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("label", { staticClass: "label" }, [_vm._v("Email")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "control" }, [
+                  _c("input", {
+                    staticClass: "input",
+                    attrs: { type: "text", placeholder: "Email " }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("label", { staticClass: "label" }, [_vm._v("Kata Sandi")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "control" }, [
+                  _c("input", {
+                    staticClass: "input",
+                    attrs: { type: "password", placeholder: "Kata Sandi" }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field is-grouped" }, [
+                _c("div", { staticClass: "control" }, [
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("button", { staticClass: "button is-link" }, [
+                    _vm._v("Daftar")
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-200e750e", module.exports)
+  }
+}
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/image.jpg?61475899bfab84f6abffc1368cb3633b";
 
 /***/ })
 /******/ ]);
