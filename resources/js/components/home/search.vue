@@ -37,7 +37,7 @@
                         <p>
                             <strong>
                                 <!-- {{data.namaLowongan}} -->
-                                  Staff IT PT Cahaya Cipta Selaras
+                                dsdsdasasas
                             </strong>
                             <br>
                             <!-- {{data.deskripsiLowongan}} -->
@@ -90,5 +90,4 @@ export default {
     }
 }
 </script>
-<style>
-</style>
+

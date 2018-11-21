@@ -14673,7 +14673,7 @@ if (inBrowser && window.Vue) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(56);
+module.exports = __webpack_require__(55);
 
 
 /***/ }),
@@ -58269,7 +58269,7 @@ exports = module.exports = __webpack_require__(45)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.footer{\n    background-color: black;\n}\n", ""]);
 
 // exports
 
@@ -58691,6 +58691,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -58702,81 +58709,92 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "has-background-light" }, [
-    _c("div", [
-      _c(
-        "nav",
-        {
-          staticClass: "navbar is-dark",
-          attrs: { role: "navigation", "aria-label": "main navigation" }
-        },
-        [
-          _vm._m(0),
-          _vm._v(" "),
+  return _c(
+    "div",
+    { staticClass: "has-background-light", staticStyle: { height: "100%" } },
+    [
+      _c("div", [
+        _c(
+          "nav",
+          {
+            staticClass: "navbar is-dark",
+            attrs: { role: "navigation", "aria-label": "main navigation" }
+          },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "navbar-menu",
+                attrs: { id: "navbarBasicExample" }
+              },
+              [
+                _c(
+                  "div",
+                  { staticClass: "navbar-start" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "navbar-item",
+                        class: { "is-black": _vm.burger },
+                        attrs: { to: { name: "Search" } }
+                      },
+                      [_vm._v("\n                    Home\n                ")]
+                    ),
+                    _vm._v(" "),
+                    _c("a", { staticClass: "navbar-item" }, [
+                      _vm._v(
+                        "\n                    Cari Lowongan\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("a", { staticClass: "navbar-item" }, [
+                      _vm._v(
+                        "\n                    Lamar Kerja\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("a", { staticClass: "navbar-item" }, [
+                      _vm._v(
+                        "\n                    Contact Us\n                "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("a", { staticClass: "navbar-item" }, [
+                      _vm._v("\n                    About Us\n                ")
+                    ])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _vm._m(1)
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "appPage" } }, [
           _c(
-            "div",
-            { staticClass: "navbar-menu", attrs: { id: "navbarBasicExample" } },
+            "main",
+            { staticClass: "pageContent" },
             [
               _c(
-                "div",
-                { staticClass: "navbar-start" },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "navbar-item",
-                      class: { "is-black": _vm.burger },
-                      attrs: { to: { name: "Search" } }
-                    },
-                    [_vm._v("\n                    Home\n                ")]
-                  ),
-                  _vm._v(" "),
-                  _c("a", { staticClass: "navbar-item" }, [
-                    _vm._v(
-                      "\n                    Cari Lowongan\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { staticClass: "navbar-item" }, [
-                    _vm._v(
-                      "\n                    Lamar Kerja\n                "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { staticClass: "navbar-item" }, [
-                    _vm._v("\n                    Contact Us\n                ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { staticClass: "navbar-item" }, [
-                    _vm._v("\n                    About Us\n                ")
-                  ])
-                ],
+                "transition",
+                { attrs: { name: "fade" } },
+                [_c("router-view")],
                 1
-              ),
-              _vm._v(" "),
-              _vm._m(1)
-            ]
+              )
+            ],
+            1
           )
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "appPage" } }, [
-        _c(
-          "main",
-          { staticClass: "pageContent" },
-          [
-            _c(
-              "transition",
-              { attrs: { name: "fade" } },
-              [_c("router-view")],
-              1
-            )
-          ],
-          1
-        )
+        ]),
+        _vm._v(" "),
+        _vm._m(2)
       ])
-    ])
-  ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -58824,6 +58842,26 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("a", { staticClass: "button is-info" }, [
             _vm._v("\n                        Log in\n                    ")
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", { staticClass: "footer" }, [
+      _c("div", { staticClass: "content has-text-centered" }, [
+        _c("h6", [
+          _c("strong", [_vm._v("InfoKerja ")]),
+          _vm._v(" @2018 find us on "),
+          _c("a", { attrs: { href: "https://facebook.com" } }, [
+            _vm._v("Facebook")
+          ]),
+          _vm._v(" or\n                        "),
+          _c("a", { attrs: { href: "http://twitter.com" } }, [
+            _vm._v("Twitter")
           ])
         ])
       ])
@@ -59059,7 +59097,7 @@ var staticRenderFns = [
                   _c("p", [
                     _c("strong", [
                       _vm._v(
-                        "\n                              Staff IT PT Cahaya Cipta Selaras\n                        "
+                        "\n                            dsdsdasasas\n                        "
                       )
                     ]),
                     _vm._v(" "),
@@ -59106,7 +59144,7 @@ var normalizeComponent = __webpack_require__(4)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(55)
+var __vue_template__ = __webpack_require__(54)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -59145,8 +59183,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 54 */,
-/* 55 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -59166,7 +59203,7 @@ if (false) {
 }
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
