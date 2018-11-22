@@ -18,32 +18,33 @@
 										<input class="input" type="text" placeholder="Nama Perusahaan">
 									  </div>
 									</div>
-									
+
 									<div class="field">
 									  <label class="label">Email</label>
 									  <div class="control">
 										<input class="input" type="text" placeholder="Email">
 									  </div>
 									</div>
-									
+
 									<div class="field">
 									  <label class="label">Kata Sandi</label>
 									  <div class="control">
 										<input class="input" type="password" placeholder="Kata Sandi">
 									  </div>
 									</div>
-									
+
 									<div class="field">
 									  <label class="label">Konfirmasi Kata Sandi</label>
 									  <div class="control">
 										<input class="input" type="password" placeholder="Konfirmasi Kata Sandi">
 									  </div>
 									</div>
-
                 <div class="field is-grouped">
                     <div class="control">
                     <br>
-                    <button class="button is-link">Daftar</button>
+                    <router-link :to="{name:'RegisterPerusahaan'}" class="button is-link" :class="{'is-black': burger}">
+											Daftar
+                    </router-link>
                     </div>
                 </div>
             </div>

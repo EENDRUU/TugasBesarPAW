@@ -65,11 +65,11 @@
 		
 									  </div>
 									</div>
-
 									<div class="field is-grouped">
 									  <div class="control">
 										<br>
-										<button class="button is-link">Simpan</button>
+										<router-link :to="{name:'EditPelamar'}" class="button is-link" :class="{'is-black': burger}">
+											Simpan</router-link>
 									  </div>
 									</div>
 								</div>

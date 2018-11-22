@@ -11,6 +11,10 @@ const Index = Vue.component('Index',require('./components/home/index.vue'));
 const Register = Vue.component('Register',require('./components/home/register.vue'));
 const RegisterPelamar = Vue.component('RegisterPelamar',require('./components/home/registrasi_pelamar.vue'));
 const RegisterPerusahaan = Vue.component('RegisterPerusahaan',require('./components/home/registrasi_perusahaan.vue'));
+const EditLowongan = Vue.component('EditLowongan',require('./components/home/editLowongan.vue'));
+const EditPelamar = Vue.component('EditPelamar',require('./components/home/editPelamar.vue'));
+const TambahPelamar = Vue.component('TambahPelamar',require('./components/home/tambahPelamar.vue'));
+const TambahLowongan = Vue.component('TambahLowongan',require('./components/home/tambahLowongan.vue'));
 
 const routes = [
     {
@@ -46,6 +50,31 @@ const routes = [
                 name: 'RegisterPerusahaan',
                 path: '/registerperusahaan',
                 component: RegisterPerusahaan
+            },
+            {
+                name: 'LoginPerusahaan',
+                path: '/login_perusahaan',
+                component: LoginPerusahaan
+            },
+            {
+                name: 'EditLowongan',
+                path: '/editLowongan',
+                component: EditLowongan
+            },
+            {
+                name: 'EditPelamar',
+                path: '/editPelamar',
+                component: EditPelamar
+            },
+            {
+                name: 'TambahPelamar',
+                path: '/TambahPelamar',
+                component: TambahPelamar
+            },
+            {
+                name: 'TambahLowongan',
+                path: '/TambahLowongan',
+                component: TambahLowongan
             },
         ]
       }

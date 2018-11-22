@@ -69,7 +69,8 @@ export default {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                position: relative;}
+                position: relative;
+            }
 
         .image2{
             background-image: url("../../../img/3.jpg");
@@ -78,5 +79,10 @@ export default {
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
+
         }
+        h1, h2, h3{
+            color: white;
+        }
+
 </style>
