@@ -63,6 +63,17 @@ class LowonganController extends Controller
             return response()->json($data,200);
     }
 
+    public function showDetail($id)
+    {
+        $data = Lowongan::where('id', $id)->get();
+        if(is_null($data)){
+            return response()->json('Not Found',404);
+        }
+        else
+            return response()->json($data,200);
+    }
+
+
     /**
      * Show the form for editing the specified resource.
      *

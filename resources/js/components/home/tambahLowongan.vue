@@ -96,7 +96,9 @@ export default {
         addmessage(){
             let uri="/api/Lowongan";
              axios.post(uri,this.data).then((response) => {
+                alert("Lowongan Berhasil Ditambah!!");
                 this.load = false;
+
 
             }).catch(error => {
                 this.$toast.open({
@@ -107,7 +109,7 @@ export default {
                 queue: false,
             })
             });
-            alert("Lowongan Berhasil Ditambah!!");
+
         }
     }
 }

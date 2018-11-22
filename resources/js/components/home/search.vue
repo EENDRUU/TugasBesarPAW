@@ -48,7 +48,9 @@
                         <nav class="level is-mobile">
                             <div class="level-left">
                                     <div class="level-item">
-                                        <a class="button is-info">Selengkapnya</a>
+                                        <router-link :to="{name:'DetailPekerjaan', params: { id:data.id }}"  class="button is-info" :class="{'is-black': burger}">
+                                            Selengkapnya
+                                        </router-link>
                                     </div>
                             </div>
                         </nav>
@@ -65,6 +67,7 @@ export default {
             datas:[],
             namaLowongan: '',
             lokasi: 'Lokasi',
+            id: 0,
             load: false,
         }
     },
@@ -87,6 +90,7 @@ export default {
                 })
             });
         }
+
     }
 }
 </script>
