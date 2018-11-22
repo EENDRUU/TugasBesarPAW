@@ -15,6 +15,8 @@ const EditLowongan = Vue.component('EditLowongan',require('./components/home/edi
 const EditPelamar = Vue.component('EditPelamar',require('./components/home/editPelamar.vue'));
 const TambahPelamar = Vue.component('TambahPelamar',require('./components/home/tambahPelamar.vue'));
 const TambahLowongan = Vue.component('TambahLowongan',require('./components/home/tambahLowongan.vue'));
+const TambahLowongan = Vue.component('TambahLowongan',require('./components/home/tambahLowongan.vue'));
+const DetailPekerjaan = Vue.component('DetailPekerjaan',require('./components/home/detailPekerjaan.vue'));
 
 const routes = [
     {
@@ -74,6 +76,11 @@ const routes = [
             {
                 name: 'TambahLowongan',
                 path: '/TambahLowongan',
+                component: TambahLowongan
+            },
+            {
+                name: 'DetailPekerjaan',
+                path: '/detailPekerjaan',
                 component: TambahLowongan
             },
         ]

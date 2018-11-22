@@ -54,7 +54,7 @@
 									<div class="field is-grouped">
 									  <div class="control">
 										<br>
-										<router-link :to="{name:'EditLowongan'}" class="button is-link" :class="{'is-black': burger}">
+										<router-link :to="{name:'DetailPekerjaan'}" class="button is-link" :class="{'is-black': burger}">
 										Simpan
 										</router-link>
 									  </div>
