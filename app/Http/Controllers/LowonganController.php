@@ -35,7 +35,16 @@ class LowonganController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = new Lowongan();
+        $data->namaLowongan = $request->namaLowongan;
+        $data->namaPerusahaan = $request->namaPerusahaan;
+        $data->lokasi = $request->lokasi;
+        $data->pendidikan = $request->pendidikan;
+        $data->deskripsiLowongan = $request->deskripsiLowongan;
+        $data->deskripsiPerusahaan = $request->deskripsiPerusahaan;
+        $data->save();
+
+        return response()->json(['status'=>'200','Lowongan'=>$data]);
     }
 
     /**

@@ -1,5 +1,5 @@
 <template>
-<div class="hero-body header-image" style="padding-top: 200px; padding-bottom: 200px">
+<div class="hero-body header-image" style="padding-top: 210px; padding-bottom: 220px">
     <div class="container has-text-centered">
         <div class="column">
             <strong>
@@ -48,4 +48,5 @@
                     background-size: cover;
                     background-color: #999;
             }
+
 </style>

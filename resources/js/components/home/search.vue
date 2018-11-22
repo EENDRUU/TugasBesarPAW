@@ -1,5 +1,5 @@
 <template>
-    <div class="container" style="height: 100%">
+    <div class="container" style="padding-bottom: 30%;">
         <div style="margin-top: 50px;">
             <h1 style="font-size:40px;">Search Result</h1>
         </div>

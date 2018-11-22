@@ -23,9 +23,9 @@
                <router-link :to="{name:'Search'}"  class="navbar-item" :class="{'is-black': burger}">
                     Cari Lowongan
                 </router-link>
-                <a class="navbar-item">
+                <router-link :to="{name:'TambahLowongan'}"  class="navbar-item" :class="{'is-black': burger}">
                     Tambah Lowongan
-                </a>
+                </router-link>
                 <a class="navbar-item">
                     Contact Us
                 </a>
