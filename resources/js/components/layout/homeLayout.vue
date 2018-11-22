@@ -1,5 +1,5 @@
 <template>
-<div class="has-background-light is-fullheight" style="">
+<div class="has-background-light">
     <div>
          <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
@@ -16,13 +16,13 @@
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                <router-link :to="{name:'Search'}"  class="navbar-item" :class="{'is-black': burger}">
+                <router-link :to="{name:'Index'}"  class="navbar-item" :class="{'is-black': burger}">
                     Home
                 </router-link>
 
-                <a class="navbar-item">
+               <router-link :to="{name:'Search'}"  class="navbar-item" :class="{'is-black': burger}">
                     Cari Lowongan
-                </a>
+                </router-link>
                 <a class="navbar-item">
                     Lamar Kerja
                 </a>
@@ -32,21 +32,19 @@
                 <a class="navbar-item">
                     About Us
                 </a>
-                <router-link :to="{name: 'LoginPelamar'}"  class="navbar-item" :class="{'is-black': burger}">
-                    Login Pelamar
-                </router-link>
+
 
                 </div>
 
                 <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-info">
-                        Log in
-                    </a>
+                        <router-link :to="{name: 'Register'}"  class="button is-primary" :class="{'is-black': burger}">
+                            Sign up
+                        </router-link>
+                        <a class="button is-info">
+                            Log in
+                        </a>
                     </div>
                 </div>
                 </div>

@@ -13,21 +13,20 @@
                         <span class="select is-large">
                             <select>
                             <option>Lokasi</option>
-                            <option>Yogyakarta</option>
                             <option>Semarang</option>
                             <option>Jakarta</option>
                             </select>
                         </span>
                         </p>
                     <p class="control">
-                        <a class="button is-info is-large" >
+                        <router-link :to="{name:'Search'}"  class="button is-info" :class="{'is-black': burger}">
                             Search
-                        </a>
+                        </router-link>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 60px">
+        <div class="container" style="margin-top: 60px"  v-for="data in datas" :key="data.namaLowongan">
             <div class="box" style="margin-bottom: 40px;">
                 <article class="media">
                     <figure class="media-left">
@@ -39,15 +38,10 @@
                         <div class="content">
                         <p>
                             <strong>
-                                <!-- {{data.namaLowongan}} -->
-                                dsdsdasasas
+                                {{data.namaLowongan}}
                             </strong>
                             <br>
-                            <!-- {{data.deskripsiLowongan}} -->
-                            - Mengurus Jaringan yang ada di dalam kantor
-                            - Mengurus website yang ada di kantor
-                            - Mengurus database karyawan
-                            - Melakukan pengecekan dan reparasi hardware maupun software secara berkala - ...
+                            {{data.deskripsiLowongan}}
                         </p>
                         </div>
                         <nav class="level is-mobile">
@@ -67,29 +61,30 @@
 export default {
     data(){
         return{
-            // datas:[]
+            datas:[],
+            namaLowongan: 'a'
         }
     },
     created(){
-        // this.getData();
+        this.getData();
     },
 
     methods:{
-        // getData(){
-        //      let uri="/api/Lowongan";
-        //      axios.get(uri).then((response) => {
-        //          console.log(response);
-        //          this.datas = response.data;
-        //     }).catch(error => {
-        //         this.$toast.open({
-        //             duration: 2000,
-        //             message: error,
-        //             position: 'is-bottom',
-        //             type: 'is-danger',
-        //             queue: false,
-        //         })
-        //     });
-        // }
+        getData(){
+             let uri='/api/Lowongan/' + namaLowongan;
+             axios.get("/api/Lowongan/a").then((response) => {
+                 console.log(response);
+                 this.datas = response.data;
+            }).catch(error => {
+                this.$toast.open({
+                    duration: 2000,
+                    message: error,
+                    position: 'is-bottom',
+                    type: 'is-danger',
+                    queue: false,
+                })
+            });
+        }
     }
 }
 </script>

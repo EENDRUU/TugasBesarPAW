@@ -17,4 +17,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('lowongans/{namaLowongan}', 'LowonganController@show');
+// Route::get('/Lowongan','LowonganController@index');
+Route::get('/Lowongan/{namaLowongan}', 'LowonganController@show');
+// Route::post('/Lowongan','LowonganController@store');
