@@ -1,46 +1,66 @@
 <template>
     <div class="hero-body">
                     <div class="container">
-						<div class="card">
+                    	<div class="card">
 						  <div class="card-image">
 							<figure class="image is-3by1">
-							  <img src="../../../img/findjobsBanner.jpg">
-								
+							  <img src="../../../img/EmployeeBenefits.jpg">
 							</figure>
 						  </div>
 							<div class="card-content">
 								<div class="column is-6 is-offset-3">
 									<h1 class="title1">
-										Login Perusahaan
+										Tambah Lowongan
 									</h1><br><br>
-									
 									<div class="field">
-									  <label class="label">Email</label>
+									  <label class="label">Nama Perusahaan</label>
 									  <div class="control">
-										<input class="input" type="text" placeholder="Email Perusahaan">
+										<input class="input" type="nama_perusahaan" placeholder="nama perusahaan">
 									  </div>
 									</div>
 									
 									<div class="field">
-									  <label class="label">Kata Sandi</label>
+									  <label class="label">Bidang Pekerjaan</label>
 									  <div class="control">
-										<input class="input" type="password" placeholder="Kata Sandi">
+										<input class="input" type="bidang_pekerjaan" placeholder="bidang pekerjaan">
 									  </div>
 									</div>
 									
+									<div class="field">
+									  <label class="label">Lokasi</label>
+									  <div class="control">
+										<input class="input" type="lokasi" placeholder="lokasi">
+									  </div>
+									</div>
 									
+									<div class="field">
+									  <label class="label">Pendidikan</label>
+									  <div class="control">
+										<input class="input" type="pendidikan" placeholder="pendidikan">
+									  </div>
+									</div>
+									
+									<div class="field">
+									  <label class="label">Deskripsi</label>
+									  <div class="control">
+									  <textarea rows="10" cols="95">
+		
+									  </textarea>
+		
+									  </div>
+									</div>
 
 									<div class="field is-grouped">
 									  <div class="control">
 										<br>
-										<button class="button is-link">Daftar</button>
+										<button class="button is-link">Simpan</button>
 									  </div>
 									</div>
 								</div>
 							</div>
 							</div>
 							</div>
-                    </div>
+          </div>
 </template>
 <script>
 export default {
@@ -83,7 +103,6 @@ export default {
                     background-color: #999;
             }
 			
-			
 			.title1{
 					font-size: 35pt;
 					color: grey;
@@ -94,4 +113,4 @@ export default {
 			  background: rgb(255,255,255); /* Fallback color */
 			  background: rgba(255,255,255, 0.5); /* background with 0.5 opacity */
 			}
- </style>
+</style>

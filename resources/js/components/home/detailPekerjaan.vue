@@ -86,6 +86,7 @@
                         – Memiliki kemauan untuk belajar dan mengembangkan diri<br>
                         – Mampu berkomunikasi menggunakan bahasa Inggris merupakan nilai lebih<br><br>
 
+<<<<<<< HEAD
                         Waktu Bekerja :<br>
                         Jam 08:00 – 17:00<br>
                     </p>
@@ -115,6 +116,37 @@
                 </article>
             </div>
             </div>
+=======
+                                              Waktu Bekerja :<br>
+                                              Jam 08:00 – 17:00<br>
+                                            </p>
+                                            <a class="button is-success is-outlined" > Back to search result</a>
+                                            <a class="button is-info is-outlined" >Lamar Pekerjaan</a>
+                                          </div>
+                                        </article>
+                                      </div>
+                                    </div>
+                                    <div class="tile is-parent">
+                                      <article class="tile is-child notification is-white">
+                                        <div class="content">
+                                          <p class="title">Profile Perusahaan</p>
+                                          <p class="subtitle"></p>
+                                          <div class="content">
+                                            <p class="image is-64x64">
+                                              <img src="../../../img/job3.png">
+                                            </p>
+                                            <p class="subtitle">
+                                              Deskripsi Perusahaan
+                                            </p>
+                                            <p>
+                                              ETI is leading in the development of foam protection systems, with fully qualified, university educated mechanical and electronics enigineers at the cutting edge of professionalism. These systems have been installed on thousands of vehicles and other equipment worldwide over the past 13 years and have proved themselves as successful fire detection and suppression systems.
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </article>
+                                    </div>
+                                  </div>
+>>>>>>> b5657074a83ffc6db098e75b7745203916ac774b
 
 </div>
 </template>

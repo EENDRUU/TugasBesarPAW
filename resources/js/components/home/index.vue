@@ -41,6 +41,7 @@
 </script>
 <style>
     .header-image {
+<<<<<<< HEAD
         background-image: url("../../../img/backgroud_index.jpg");
         background-position: center center;
         background-repeat: no-repeat;
@@ -48,4 +49,13 @@
         background-size: cover;
         background-color: #999;
     }
+=======
+                    background-image: url("../../../img/backgroud_index.jpg");
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: cover;
+                    background-color: #999;
+            }
+>>>>>>> b5657074a83ffc6db098e75b7745203916ac774b
 </style>

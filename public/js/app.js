@@ -14979,28 +14979,7 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
-}
-
-
-/***/ }),
+/* 14 */,
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -59664,26 +59643,12 @@ if(false) {
 
 /***/ }),
 /* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var escape = __webpack_require__(14);
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.header-image {\n    background-image: url(" + escape(__webpack_require__(66)) + ");\n    background-position: center center;\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-size: cover;\n    background-color: #999;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 66 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/backgroud_index.jpg?5c2419ce7ac5d1014110fe40b14d6670";
+throw new Error("Module build failed: CssSyntaxError: D:\\WEB\\Tugas_besar_PAW\\infokerja\\resources\\js\\components\\home\\index.vue:59:13: Unexpected }\n    at Input.error (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\input.js:119:22)\n    at Parser.unexpectedClose (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\parser.js:510:26)\n    at Parser.end (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\parser.js:353:18)\n    at Parser.parse (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\parser.js:68:26)\n    at parse (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\parse.js:24:16)\n    at new LazyResult (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\lazy-result.js:70:24)\n    at Processor.process (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\processor.js:117:12)\n    at loadPostcssConfig.then.config (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\vue-loader\\lib\\style-compiler\\index.js:61:10)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)");
 
 /***/ }),
+/* 66 */,
 /* 67 */
 /***/ (function(module, exports) {
 
@@ -59759,7 +59724,7 @@ var staticRenderFns = [
                 },
                 [
                   _vm._v(
-                    "\n                        Cari Lowongan Kerja\n                "
+                    "\r\n                        Cari Lowongan Kerja\r\n                "
                   )
                 ]
               )
@@ -59770,7 +59735,7 @@ var staticRenderFns = [
               { staticClass: "subtitle", staticStyle: { color: "black" } },
               [
                 _vm._v(
-                  "\n                Sesuai dengan keahlian dan lokasi anda.\n            "
+                  "\r\n                Sesuai dengan keahlian dan lokasi anda.\r\n            "
                 )
               ]
             )
@@ -59802,7 +59767,7 @@ var staticRenderFns = [
               _c("p", { staticClass: "control " }, [
                 _c("a", { staticClass: "button is-info is-large" }, [
                   _vm._v(
-                    "\n                        Search\n                    "
+                    "\r\n                        Search\r\n                    "
                   )
                 ])
               ])
@@ -59901,32 +59866,13 @@ if(false) {
 
 /***/ }),
 /* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var escape = __webpack_require__(14);
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.image1{\n    background-image: url(" + escape(__webpack_require__(72)) + ");\n    height: 400px;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n.image2{\n    background-image: url(" + escape(__webpack_require__(73)) + ");\n    height: 400px;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\nh1, h2, h3{\n    color: white;\n}\n\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 72 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/2.jpg?edffeda2a404669140eb8ccd10f7d05b";
+throw new Error("Module build failed: CssSyntaxError: D:\\WEB\\Tugas_besar_PAW\\infokerja\\resources\\js\\components\\home\\register.vue:95:1: Unknown word\n    at Input.error (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\input.js:119:22)\n    at Parser.unknownWord (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\parser.js:506:26)\n    at Parser.other (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\parser.js:171:18)\n    at Parser.parse (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\parser.js:84:26)\n    at parse (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\parse.js:24:16)\n    at new LazyResult (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\lazy-result.js:70:24)\n    at Processor.process (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\postcss\\lib\\processor.js:117:12)\n    at loadPostcssConfig.then.config (D:\\WEB\\Tugas_besar_PAW\\infokerja\\node_modules\\vue-loader\\lib\\style-compiler\\index.js:61:10)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)");
 
 /***/ }),
-/* 73 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/3.jpg?b38eebe1c74f4c9e378f542d4d9de63b";
-
-/***/ }),
+/* 72 */,
+/* 73 */,
 /* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -60076,7 +60022,7 @@ var staticRenderFns = [
         [
           _c("i", [
             _vm._v(
-              "\n                                    Daftar Sebagai Pencari Kerja\n                            "
+              "\r\n                                    Daftar Sebagai Pencari Kerja\r\n                            "
             )
           ])
         ]
@@ -60090,7 +60036,7 @@ var staticRenderFns = [
     return _c("h2", { staticClass: "subtitle" }, [
       _c("strong", { staticStyle: { color: "white" } }, [
         _vm._v(
-          "\n                                TEMUKAN PEKERJAAN IMPIANMU\n                        "
+          "\r\n                                TEMUKAN PEKERJAAN IMPIANMU\r\n                        "
         )
       ])
     ])
@@ -60109,7 +60055,7 @@ var staticRenderFns = [
         [
           _c("i", [
             _vm._v(
-              "\n                                Daftar Sebagai Perusahaan\n                        "
+              "\r\n                                Daftar Sebagai Perusahaan\r\n                        "
             )
           ])
         ]
@@ -60123,7 +60069,7 @@ var staticRenderFns = [
     return _c("h2", { staticClass: "subtitle" }, [
       _c("strong", { staticStyle: { color: "white" } }, [
         _vm._v(
-          "\n                            TEMUKAN KANDIDAT POTENSIONAL\n                    "
+          "\r\n                            TEMUKAN KANDIDAT POTENSIONAL\r\n                    "
         )
       ])
     ])
@@ -60287,6 +60233,49 @@ exports.push([module.i, "\n.title1{\n        font-size: 35pt;\n        color: gr
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 // export default {
 //     data(){
@@ -60321,105 +60310,7 @@ exports.push([module.i, "\n.title1{\n        font-size: 35pt;\n        color: gr
 /* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "hero-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-image" }, [
-            _c("figure", { staticClass: "image is-3by1" }, [
-              _c("img", {
-                attrs: { src: __webpack_require__(81) }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-content" }, [
-            _c("div", { staticClass: "column is-6 is-offset-3" }, [
-              _c("h1", { staticClass: "title1" }, [
-                _vm._v(
-                  "\n                        Registrasi Pelamar\n                    "
-                )
-              ]),
-              _c("br"),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [_vm._v("Nama")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    staticClass: "input",
-                    attrs: { type: "text", placeholder: "Nama" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [_vm._v("Email")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    staticClass: "input",
-                    attrs: { type: "text", placeholder: "Email" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [_vm._v("Kata Sandi")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    staticClass: "input",
-                    attrs: { type: "password", placeholder: "Kata Sandi" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [
-                  _vm._v("Konfirmasi Kata Sandi")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    staticClass: "input",
-                    attrs: {
-                      type: "password",
-                      placeholder: "Konfirmasi Kata Sandi"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field is-grouped" }, [
-                _c("div", { staticClass: "control" }, [
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("button", { staticClass: "button is-link" }, [
-                    _vm._v("Daftar")
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
+module.exports={render:function(){},staticRenderFns:[]}
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
@@ -60428,12 +60319,7 @@ if (false) {
 }
 
 /***/ }),
-/* 81 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Job-Search-SB.jpg?525d587b176862f90800f4ec873cc410";
-
-/***/ }),
+/* 81 */,
 /* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -60582,6 +60468,49 @@ exports.push([module.i, "\n.title1{\n        font-size: 35pt;\n        color: gr
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 // export default {
 //     data(){
@@ -60616,105 +60545,7 @@ exports.push([module.i, "\n.title1{\n        font-size: 35pt;\n        color: gr
 /* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "hero-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-image" }, [
-            _c("figure", { staticClass: "image is-3by1" }, [
-              _c("img", { attrs: { src: __webpack_require__(87) } })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-content" }, [
-            _c("div", { staticClass: "column is-6 is-offset-3" }, [
-              _c("h1", { staticClass: "title1" }, [
-                _vm._v(
-                  "\n                    Registrasi Perusahaan\n                "
-                )
-              ]),
-              _c("br"),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [
-                  _vm._v("Nama Perusahaan")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    staticClass: "input",
-                    attrs: { type: "text", placeholder: "Nama Perusahaan" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [_vm._v("Email")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    staticClass: "input",
-                    attrs: { type: "text", placeholder: "Email" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [_vm._v("Kata Sandi")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    staticClass: "input",
-                    attrs: { type: "password", placeholder: "Kata Sandi" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label" }, [
-                  _vm._v("Konfirmasi Kata Sandi")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    staticClass: "input",
-                    attrs: {
-                      type: "password",
-                      placeholder: "Konfirmasi Kata Sandi"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field is-grouped" }, [
-                _c("div", { staticClass: "control" }, [
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("button", { staticClass: "button is-link" }, [
-                    _vm._v("Daftar")
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
+module.exports={render:function(){},staticRenderFns:[]}
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
@@ -60723,12 +60554,7 @@ if (false) {
 }
 
 /***/ }),
-/* 87 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/gmbr.jpg?97aa7bc2f49f88d2b4e8a71641f66084";
-
-/***/ }),
+/* 87 */,
 /* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 

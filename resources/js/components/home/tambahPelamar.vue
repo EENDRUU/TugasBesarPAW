@@ -1,39 +1,75 @@
 <template>
     <div class="hero-body">
                     <div class="container">
+					
+					
 						<div class="card">
 						  <div class="card-image">
 							<figure class="image is-3by1">
-							  <img src="../../../img/findjobsBanner.jpg">
-								
+							  <img src="../../../img/Job-Search-SB.jpg">
 							</figure>
 						  </div>
 							<div class="card-content">
 								<div class="column is-6 is-offset-3">
 									<h1 class="title1">
-										Login Perusahaan
+										Profil Pelamar
 									</h1><br><br>
+									<figure class="image is-128x128" style="center">
+										<img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+									</figure>
+									<br>
+									<div class="field">
+									  <label class="label">Nama Pelamar</label>
+									  <div class="control">
+										<input class="input" type="nama_pelamar" placeholder="">
+									  </div>
+									</div>
 									
 									<div class="field">
 									  <label class="label">Email</label>
 									  <div class="control">
-										<input class="input" type="text" placeholder="Email Perusahaan">
+										<input class="input" type="email" placeholder="">
 									  </div>
 									</div>
 									
 									<div class="field">
-									  <label class="label">Kata Sandi</label>
+									  <label class="label">TTL</label>
 									  <div class="control">
-										<input class="input" type="password" placeholder="Kata Sandi">
+										<input class="input" type="ttl" placeholder="">
 									  </div>
 									</div>
 									
+									<div class="field">
+									  <label class="label">Keahlian</label>
+									  <div class="control">
+									  <textarea rows="10" cols="95">
+		
+									  </textarea>
+		
+									  </div>
+									</div>
 									
+									<div class="field">
+									  <label class="label">Pendidikan</label>
+									  <div class="control">
+										<input class="input" type="pendidikan" placeholder="">
+									  </div>
+									</div>
+									
+									<div class="field">
+									  <label class="label">Pengalaman Kerja</label>
+									  <div class="control">
+									  <textarea rows="10" cols="95">
+		
+									  </textarea>
+		
+									  </div>
+									</div>
 
 									<div class="field is-grouped">
 									  <div class="control">
 										<br>
-										<button class="button is-link">Daftar</button>
+										<button class="button is-link">Simpan</button>
 									  </div>
 									</div>
 								</div>
@@ -73,7 +109,7 @@ export default {
 }
 </script>
 
-<style>
+ <style>
             .header-image {
                     background-image: url("");
                     background-position: center center;
@@ -82,7 +118,6 @@ export default {
                     background-size: cover;
                     background-color: #999;
             }
-			
 			
 			.title1{
 					font-size: 35pt;
@@ -94,4 +129,4 @@ export default {
 			  background: rgb(255,255,255); /* Fallback color */
 			  background: rgba(255,255,255, 0.5); /* background with 0.5 opacity */
 			}
- </style>
+</style>
