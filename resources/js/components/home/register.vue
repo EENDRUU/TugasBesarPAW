@@ -55,8 +55,6 @@ export default {
 </script>
 
 <style>
-<<<<<<< HEAD
-=======
             .header-image {
                     background-image: url("../../../img/backgroud_index.jpg");
                     background-position: center center;
@@ -71,18 +69,7 @@ export default {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                position: relative;
->>>>>>> b5657074a83ffc6db098e75b7745203916ac774b
-
-        .image1{
-            background-image: url("../../../img/2.jpg");
-            height: 400px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-
-        }
+                position: relative;}
 
         .image2{
             background-image: url("../../../img/3.jpg");
@@ -91,20 +78,5 @@ export default {
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-
-<<<<<<< HEAD
         }
-        h1, h2, h3{
-            color: white;
-        }
-=======
-            .image2{
-                background-image: url("../../../img/3.jpg");
-                height: 400px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
->>>>>>> b5657074a83ffc6db098e75b7745203916ac774b
-
 </style>

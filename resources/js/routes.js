@@ -6,6 +6,7 @@ Vue.use(VueRouter)
 const HomeLayout = Vue.component('HomeLayout',require('./components/layout/homelayout.vue'));
 const Search = Vue.component('Search',require('./components/home/search.vue'));
 const LoginPelamar = Vue.component('LoginPelamar',require('./components/home/login_pelamar.vue'));
+const LoginPerusahaan = Vue.component('LoginPerusahaan',require('./components/home/login_perusahaan.vue'));
 const Index = Vue.component('Index',require('./components/home/index.vue'));
 const Register = Vue.component('Register',require('./components/home/register.vue'));
 const RegisterPelamar = Vue.component('RegisterPelamar',require('./components/home/registrasi_pelamar.vue'));

@@ -26,11 +26,13 @@
                         <input class="input" type="password" placeholder="Kata Sandi">
                         </div>
                     </div>
-
+                    
                     <div class="field is-grouped">
                         <div class="control">
                         <br>
-                        <button class="button is-link">Daftar</button>
+                        <router-link :to="{name: 'LoginPelamar'}" class="button is-link" :class="{'is-black': burger}">
+                            Daftar
+                        </router-link>
                         </div>
                     </div>
                 </div>
