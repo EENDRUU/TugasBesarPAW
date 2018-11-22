@@ -24,7 +24,7 @@
                     Cari Lowongan
                 </router-link>
                 <a class="navbar-item">
-                    Lamar Kerja
+                    Tambah Lowongan
                 </a>
                 <a class="navbar-item">
                     Contact Us

@@ -1,29 +1,30 @@
 <template>
-    <div class="container">
+    <div class="container" style="height: 100%">
         <div style="margin-top: 50px;">
             <h1 style="font-size:40px;">Search Result</h1>
         </div>
         <div class="container" style="margin-top: 20px;">
             <div class="box">
+            <form @submit.prevent="getData();load = true">
                 <div class="field is-grouped">
                     <p class="control is-expanded">
-                        <input class="input  is-large" type="text" placeholder="Nama Pekerjaan">
+                        <input class="input  is-large" v-model="namaLowongan" type="text" placeholder="Nama Pekerjaan">
                     </p>
                     <p class="control">
                         <span class="select is-large">
-                            <select>
-                            <option>Lokasi</option>
-                            <option>Semarang</option>
-                            <option>Jakarta</option>
+                            <select v-model="lokasi">
+                                <option>Semarang</option>
+                                <option>Jakarta</option>
+                                <option>Yogyakarta</option>
+                                <option>bandung</option>
                             </select>
                         </span>
                         </p>
                     <p class="control">
-                        <router-link :to="{name:'Search'}"  class="button is-info" :class="{'is-black': burger}">
-                            Search
-                        </router-link>
+                        <button class="button is-large is-info" :class="{'is-loading':load}">Search</button>
                     </p>
                 </div>
+            </form>
             </div>
         </div>
         <div class="container" style="margin-top: 60px"  v-for="data in datas" :key="data.namaLowongan">
@@ -62,19 +63,20 @@ export default {
     data(){
         return{
             datas:[],
-            namaLowongan: 'a'
+            namaLowongan: '',
+            lokasi: 'Lokasi',
+            load: false,
         }
-    },
-    created(){
-        this.getData();
     },
 
     methods:{
         getData(){
-             let uri='/api/Lowongan/' + namaLowongan;
-             axios.get("/api/Lowongan/a").then((response) => {
+
+             axios.get("/api/Lowongan/"+this.namaLowongan+"/"+this.lokasi).then((response) => {
                  console.log(response);
                  this.datas = response.data;
+                  this.load = false;
+                this.$router.push({ name: 'Search' })
             }).catch(error => {
                 this.$toast.open({
                     duration: 2000,

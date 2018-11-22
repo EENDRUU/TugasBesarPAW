@@ -44,9 +44,9 @@ class LowonganController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($namaLowongan)
+    public function show($namaLowongan,$lokasi)
     {
-        $data = Lowongan::where('namaLowongan', $namaLowongan)->get();
+        $data = Lowongan::where('namaLowongan', $namaLowongan)->where('lokasi',$lokasi)->get();
         if(is_null($data)){
             return response()->json('Not Found',404);
         }
