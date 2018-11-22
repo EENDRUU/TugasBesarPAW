@@ -42,7 +42,7 @@
                     <div class="field is-grouped">
                         <div class="control">
                         <br>
-                        <router-link :to="{name:'RegisterPelamar'}"  class="button is-link" :class="{'is-black': burger}">
+                        <router-link :to="{name:'LoginPelamar'}"  class="button is-link" :class="{'is-black': burger}">
 													Daftar
                         </router-link>
                         </div>
