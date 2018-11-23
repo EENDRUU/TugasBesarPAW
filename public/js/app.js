@@ -58525,47 +58525,58 @@ var routes = [{
     children: [{
         name: 'Index',
         path: '/',
-        component: Index
+        component: Index,
+        props: true
     }, {
         name: 'Search',
         path: '/search',
-        component: Search
+        component: Search,
+        props: true
     }, {
         name: 'LoginPelamar',
         path: '/loginpelamar',
-        component: LoginPelamar
+        component: LoginPelamar,
+        props: true
     }, {
         name: 'Register',
         path: '/register',
-        component: Register
+        component: Register,
+        props: true
     }, {
         name: 'RegisterPelamar',
         path: '/registerpelamar',
-        component: RegisterPelamar
+        component: RegisterPelamar,
+        props: true
     }, {
         name: 'RegisterPerusahaan',
         path: '/registerperusahaan',
-        component: RegisterPerusahaan
+        component: RegisterPerusahaan,
+        props: true
     }, {
         name: 'LoginPerusahaan',
         path: '/login_perusahaan',
-        component: LoginPerusahaan
+        component: LoginPerusahaan,
+        props: true
     }, {
         name: 'EditLowongan',
         path: '/editLowongan',
-        component: EditLowongan
+        component: EditLowongan,
+        props: true
     }, {
         name: 'EditPelamar',
         path: '/editPelamar',
-        component: EditPelamar
+        component: EditPelamar,
+        props: true
     }, {
         name: 'TambahPelamar',
         path: '/TambahPelamar',
-        component: TambahPelamar
+        component: TambahPelamar,
+        props: true
     }, {
         name: 'TambahLowongan',
         path: '/TambahLowongan',
-        component: TambahLowongan
+        component: TambahLowongan,
+        props: true
     }, {
         name: 'DetailPekerjaan',
         path: '/detailPekerjaan',
@@ -59101,7 +59112,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -59176,16 +59187,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['namaLowongan', 'lokasi'],
     data: function data() {
         return {
             datas: [],
-            namaLowongan: '',
-            lokasi: 'Lokasi',
             id: 0,
             load: false
         };
     },
-
+    created: function created() {
+        this.getData();
+    },
 
     methods: {
         getData: function getData() {
@@ -59342,22 +59354,38 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "media-content" }, [
                     _c("div", { staticClass: "content" }, [
-                      _c("p", [
-                        _c("strong", [
+                      _c(
+                        "p",
+                        {
+                          staticStyle: {
+                            "max-height": "120px",
+                            overflow: "hidden",
+                            "text-overflow": "ellipsis",
+                            align: "justify"
+                          }
+                        },
+                        [
+                          _c("strong", [
+                            _vm._v(
+                              "\n                            " +
+                                _vm._s(data.namaLowongan) +
+                                " " +
+                                _vm._s(data.namaPerusahaan) +
+                                ", " +
+                                _vm._s(data.lokasi) +
+                                "\n                        "
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("br"),
                           _vm._v(
-                            "\n                            " +
-                              _vm._s(data.namaLowongan) +
-                              "\n                        "
+                            "\n                        " +
+                              _vm._s(data.deskripsiLowongan) +
+                              "\n                    "
                           )
-                        ]),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(
-                          "\n                        " +
-                            _vm._s(data.deskripsiLowongan) +
-                            "\n                    "
-                        )
-                      ])
+                        ]
+                      ),
+                      _vm._v("...\n                    ")
                     ]),
                     _vm._v(" "),
                     _c("nav", { staticClass: "level is-mobile" }, [
@@ -59406,7 +59434,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticStyle: { "margin-top": "50px" } }, [
-      _c("h1", { staticStyle: { "font-size": "40px" } }, [
+      _c("h1", { staticStyle: { "font-size": "40px", color: "black" } }, [
         _vm._v("Search Result")
       ])
     ])
@@ -59810,8 +59838,10 @@ exports.push([module.i, "\n.header-image {\n                background-image: ur
 
 /***/ }),
 /* 67 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
@@ -59850,6 +59880,18 @@ exports.push([module.i, "\n.header-image {\n                background-image: ur
 //
 //
 //
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            name: '',
+            location: 'Lokasi',
+            load: false
+        };
+    }
+});
 
 /***/ }),
 /* 68 */
@@ -59870,32 +59912,116 @@ var render = function() {
         _vm._m(0),
         _vm._v(" "),
         _c("div", { staticClass: "box" }, [
-          _c("div", { staticClass: "field is-grouped" }, [
-            _vm._m(1),
-            _vm._v(" "),
-            _vm._m(2),
-            _vm._v(" "),
-            _c(
-              "p",
-              { staticClass: "control " },
-              [
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "button is-info is-large",
-                    class: { "is-black": _vm.burger },
-                    attrs: { to: { name: "Search" } }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Search\n                    "
+          _c(
+            "form",
+            {
+              on: {
+                submit: function($event) {
+                  $event.preventDefault()
+                  _vm.getData()
+                  _vm.load = true
+                }
+              }
+            },
+            [
+              _c("div", { staticClass: "field is-grouped" }, [
+                _c("p", { staticClass: "control is-expanded" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.name,
+                        expression: "name"
+                      }
+                    ],
+                    staticClass: "input is-large",
+                    attrs: { type: "text", placeholder: "Nama Pekerjaan" },
+                    domProps: { value: _vm.name },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.name = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "control" }, [
+                  _c("span", { staticClass: "select is-large" }, [
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.location,
+                            expression: "location"
+                          }
+                        ],
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.location = $event.target.multiple
+                              ? $$selectedVal
+                              : $$selectedVal[0]
+                          }
+                        }
+                      },
+                      [
+                        _c("option", [_vm._v("Semarang")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Jakarta")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("Yogyakarta")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("bandung")])
+                      ]
                     )
-                  ]
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  { staticClass: "control" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "button is-large is-info",
+                        class: { "is-loading": _vm.load },
+                        attrs: {
+                          to: {
+                            name: "Search",
+                            params: {
+                              namaLowongan: _vm.name,
+                              lokasi: _vm.location
+                            }
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                            Search\n                        "
+                        )
+                      ]
+                    )
+                  ],
+                  1
                 )
-              ],
-              1
-            )
-          ])
+              ])
+            ]
+          )
         ])
       ])
     ]
@@ -59926,35 +60052,6 @@ var staticRenderFns = [
         _vm._v(
           "\n                Sesuai dengan keahlian dan lokasi anda.\n            "
         )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "control is-expanded" }, [
-      _c("input", {
-        staticClass: "input  is-large",
-        attrs: { type: "text", placeholder: "Nama Pekerjaan" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "control" }, [
-      _c("span", { staticClass: "select is-large" }, [
-        _c("select", [
-          _c("option", [_vm._v("Lokasi")]),
-          _vm._v(" "),
-          _c("option", [_vm._v("Yogyakarta")]),
-          _vm._v(" "),
-          _c("option", [_vm._v("Semarang")]),
-          _vm._v(" "),
-          _c("option", [_vm._v("Jakarta")])
-        ])
       ])
     ])
   }

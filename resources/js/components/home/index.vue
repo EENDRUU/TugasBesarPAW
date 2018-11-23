@@ -12,31 +12,42 @@
             </h2>
         </div>
         <div class="box">
-            <div class="field is-grouped">
-                <p class="control is-expanded">
-                    <input class="input  is-large" type="text" placeholder="Nama Pekerjaan">
-                </p>
-                <p class="control">
-                    <span class="select is-large">
-                        <select>
-                        <option>Lokasi</option>
-                        <option>Yogyakarta</option>
-                        <option>Semarang</option>
-                        <option>Jakarta</option>
-                        </select>
-                    </span>
+            <form @submit.prevent="getData();load = true">
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                        <input class="input is-large" v-model="name" type="text" placeholder="Nama Pekerjaan">
                     </p>
-                <p class="control ">
-                    <router-link :to="{name:'Search'}" class="button is-info is-large" :class="{'is-black': burger}">
-                        Search
-                    </router-link>
-                </p>
-            </div>
+                    <p class="control">
+                        <span class="select is-large">
+                            <select v-model="location">
+                                <option>Semarang</option>
+                                <option>Jakarta</option>
+                                <option>Yogyakarta</option>
+                                <option>bandung</option>
+                            </select>
+                        </span>
+                        </p>
+                    <p class="control">
+                        <router-link :to="{name:'Search', params: { namaLowongan:name, lokasi:location }}"  class="button is-large is-info" :class="{'is-loading':load}">
+                            Search
+                        </router-link>
+                    </p>
+                </div>
+            </form>
         </div>
     </div>
 </div>
 </template>
 <script>
+export default {
+    data(){
+        return{
+            name: '',
+            location: 'Lokasi',
+            load: false,
+        }
+    }
+}
 
 </script>
 <style>

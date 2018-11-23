@@ -1,7 +1,7 @@
 <template>
     <div class="container" style="padding-bottom: 30%;">
         <div style="margin-top: 50px;">
-            <h1 style="font-size:40px;">Search Result</h1>
+            <h1 style="font-size:40px; color:black;">Search Result</h1>
         </div>
         <div class="container" style="margin-top: 20px;">
             <div class="box">
@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="container" style="margin-top: 60px"  v-for="data in datas" :key="data.namaLowongan">
-            <div class="box" style="margin-bottom: 40px;">
+            <div class="box" style="margin-bottom: 40px;" >
                 <article class="media">
                     <figure class="media-left">
                         <p class="image is-64x64">
@@ -37,13 +37,13 @@
                     </figure>
                     <div class="media-content">
                         <div class="content">
-                        <p>
+                        <p style="max-height: 120px;overflow: hidden;text-overflow: ellipsis; align:justify">
                             <strong>
-                                {{data.namaLowongan}}
+                                {{data.namaLowongan}} {{data.namaPerusahaan}}, {{data.lokasi}}
                             </strong>
                             <br>
                             {{data.deskripsiLowongan}}
-                        </p>
+                        </p>...
                         </div>
                         <nav class="level is-mobile">
                             <div class="level-left">
@@ -62,16 +62,17 @@
 </template>
 <script>
 export default {
+    props: ['namaLowongan','lokasi'],
     data(){
         return{
             datas:[],
-            namaLowongan: '',
-            lokasi: 'Lokasi',
             id: 0,
             load: false,
         }
     },
-
+    created(){
+        this.getData();
+    },
     methods:{
         getData(){
 

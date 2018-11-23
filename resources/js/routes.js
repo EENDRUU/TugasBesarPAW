@@ -25,57 +25,68 @@ const routes = [
             {
                 name: 'Index',
                 path: '/',
-                component: Index
+                component: Index,
+                props: true
             },
             {
                 name: 'Search',
                 path: '/search',
-                component: Search
+                component: Search,
+                props: true
             },
             {
                 name: 'LoginPelamar',
                 path: '/loginpelamar',
-                component: LoginPelamar
+                component: LoginPelamar,
+                props: true
             },
             {
                 name: 'Register',
                 path: '/register',
-                component: Register
+                component: Register,
+                props: true
             },
             {
                 name: 'RegisterPelamar',
                 path: '/registerpelamar',
-                component: RegisterPelamar
+                component: RegisterPelamar,
+                props: true
             },
             {
                 name: 'RegisterPerusahaan',
                 path: '/registerperusahaan',
-                component: RegisterPerusahaan
+                component: RegisterPerusahaan,
+                props: true
             },
             {
                 name: 'LoginPerusahaan',
                 path: '/login_perusahaan',
-                component: LoginPerusahaan
+                component: LoginPerusahaan,
+                props: true
             },
             {
                 name: 'EditLowongan',
                 path: '/editLowongan',
-                component: EditLowongan
+                component: EditLowongan,
+                props: true
             },
             {
                 name: 'EditPelamar',
                 path: '/editPelamar',
-                component: EditPelamar
+                component: EditPelamar,
+                props: true
             },
             {
                 name: 'TambahPelamar',
                 path: '/TambahPelamar',
-                component: TambahPelamar
+                component: TambahPelamar,
+                props: true
             },
             {
                 name: 'TambahLowongan',
                 path: '/TambahLowongan',
-                component: TambahLowongan
+                component: TambahLowongan,
+                props: true
             },
             {
                 name: 'DetailPekerjaan',
