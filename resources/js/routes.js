@@ -13,9 +13,11 @@ const RegisterPelamar = Vue.component('RegisterPelamar',require('./components/ho
 const RegisterPerusahaan = Vue.component('RegisterPerusahaan',require('./components/home/registrasi_perusahaan.vue'));
 const EditLowongan = Vue.component('EditLowongan',require('./components/home/editLowongan.vue'));
 const EditPelamar = Vue.component('EditPelamar',require('./components/home/editPelamar.vue'));
-const TambahPelamar = Vue.component('TambahPelamar',require('./components/home/tambahPelamar.vue'));
+const ProfilePelamar = Vue.component('ProfilePelamar',require('./components/home/profilPelamar.vue'));
 const TambahLowongan = Vue.component('TambahLowongan',require('./components/home/tambahLowongan.vue'));
 const DetailPekerjaan = Vue.component('DetailPekerjaan',require('./components/home/detailPekerjaan.vue'));
+const dashboardPelamar = Vue.component('dashboardPelamar',require('./components/home/dashboardMenuPelamar.vue'));
+const DashboardPerusahaan = Vue.component('DashboardPerusahaan',require('./components/home/dashboardMenuPerusahaan.vue'));
 
 const routes = [
     {
@@ -77,9 +79,9 @@ const routes = [
                 props: true
             },
             {
-                name: 'TambahPelamar',
-                path: '/TambahPelamar',
-                component: TambahPelamar,
+                name: 'ProfilePelamar',
+                path: '/ProfilePelamar',
+                component: ProfilePelamar,
                 props: true
             },
             {
@@ -92,6 +94,18 @@ const routes = [
                 name: 'DetailPekerjaan',
                 path: '/detailPekerjaan',
                 component: DetailPekerjaan,
+                props: true
+            },
+            {
+                name: 'dashboardPelamar',
+                path: '/dashboardPelamar',
+                component: dashboardPelamar,
+                props: true
+            },
+            {
+                name: 'DashboardPerusahaan',
+                path: '/DashboardPerusahaan',
+                component: DashboardPerusahaan,
                 props: true
             },
         ]

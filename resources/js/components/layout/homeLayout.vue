@@ -26,19 +26,19 @@
                 <router-link :to="{name:'TambahLowongan'}"  class="navbar-item" :class="{'is-black': burger}">
                     Tambah Lowongan
                 </router-link>
-                <a class="navbar-item">
-                    Contact Us
-                </a>
-                <a class="navbar-item">
-                    About Us
-                </a>
+                <router-link :to="{name:'dashboardPelamar'}"  class="navbar-item" :class="{'is-black': burger}">
+                    Dashboard Pelamar
+                </router-link>
+                <router-link :to="{name:'DashboardPerusahaan'}"  class="navbar-item" :class="{'is-black': burger}">
+                    Dashboard Perusahaan
+                </router-link>
 
 
                 </div>
 
                 <div class="navbar-end">
                 <div class="navbar-item">
-                    <div class="buttons">
+                    <div class="buttons" style="padding-right:20px;">
                         <router-link :to="{name: 'Register'}"  class="button is-primary" :class="{'is-black': burger}">
                             Sign up
                         </router-link>

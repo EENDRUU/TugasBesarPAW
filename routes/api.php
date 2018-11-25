@@ -21,4 +21,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/Lowongan/{namaLowongan}/{lokasi}', 'LowonganController@show');
 Route::post('/Lowongan','LowonganController@store');
 Route::get('/Lowongan/{id}', 'LowonganController@showDetail');
+Route::get('/Lamaran/{namaPelamar}', 'LamaranController@show');
+Route::get('/Lamaran/{id}/{namaLowongan}', 'LamaranController@showLowongan');
+Route::delete('/Lamaran/{id}', 'LamaranController@destroy');
+
 // Route::post('/Lowongan','LowonganController@store');

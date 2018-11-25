@@ -72,6 +72,15 @@ class LowonganController extends Controller
         else
             return response()->json($data,200);
     }
+    public function showLowongan($namaLowongan)
+    {
+        $data = Lowongan::where('namaLowongan', $namaLowongan)->get();
+        if(is_null($data)){
+            return response()->json('Not Found',404);
+        }
+        else
+            return response()->json($data,200);
+    }
 
 
     /**
